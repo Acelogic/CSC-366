@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Programming Assignment 3 Demo</title>
+    <link href="../demo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <div class="block">
+      <h1>CSC 366 Standard Demo Page</h1>
+      <p>
+	The following text was written to the standard output stream when the <tt>prolang_v3.pro</tt> program was executed from swi-prolog.
+      </p>
+      <div class="block">
+	<h2></h2>
+	<p>
+	  <pre>
+        mcruz@arch-desktop$ swipl     
+        Welcome to SWI-Prolog (Version 2.7.16)
+        Copyright (c) 1993-1996 University of Amsterdam.
+        All rights reserved.
+        For help, use ?- help(Topic). or ?- apropos(Word).
+        
+        
+        ?- module(demo), consult('prolang_v3.pro').
+        true.
+
+        demo:  ?- listing(names).
+        user:names :-
+            pokemon(N, _, _, _, _),
+            write(N),
+            nl,
+            fail.
+        user:names.
+
+        true.
+
+        demo:  ?- listing(types). 
+        user:types :-
+            pokemon(_, type(T), _, _, _),
+            write(T),
+            nl,
+            fail.
+        user:types.
+
+        true.
+
+        demo:  ?- names.
+        eevee
+        leafeon
+        espeon
+        flareon
+        vaporeon
+        jolteon
+        bulbasaur
+        squirtle
+        pikachu
+        charmander
+        true.
+
+        demo:  ?- types.
+        normal
+        leaf
+        psychic
+        fire
+        water
+        electric
+        leaf
+        water
+        electric
+        fire
+        true.
+
+        demo:  ?- leaf(Name).
+        Name = leafeon ;
+        Name = bulbasaur.
+
+        demo:  ?- fire(Name).
+        Name = flareon ;
+        Name = charmander.
+
+        demo:  ?- water(Name).
+        Name = vaporeon ;
+        Name = squirtle.
+
+        demo:  ?- electric(Name).
+        Name = jolteon ;
+        Name = pikachu.
+
+        demo:  ?- normal(Name).
+        Name = eevee.
+
+        demo:  ?- psychic(Name).
+        Name = espeon.
+
+        demo:  ?- strongatk(Name), write(Name), nl, fail.
+        flareon
+        vaporeon
+        bulbasaur
+        pikachu
+        false.
+
+        demo:  ?- weakatk(Name), write(Name), nl, fail.
+        eevee
+        leafeon
+        espeon
+        jolteon
+        squirtle
+        charmander
+        false.
+
+        demo:  ?- strongdef(Name), write(Name), nl, fail.
+        eevee
+        espeon
+        flareon
+        bulbasaur
+        charmander
+        false.
+
+        demo:  ?- weakdef(Name), write(Name), nl, fail.
+        leafeon
+        vaporeon
+        jolteon
+        squirtle
+        pikachu
+        false.
+
+        demo:  ?- fast(Name), write(Name), nl, fail.
+        eevee
+        vaporeon
+        false.
+
+        demo:  ?- slow(Name), write(Name), nl, fail.
+        leafeon
+        espeon
+        flareon
+        jolteon
+        bulbasaur
+        squirtle
+        pikachu
+        charmander
+        false.
+
+
+	  </pre>
+	</p>
+      </div>
+    </div>
+
+  </div>
+    
+</body>
+</html>
+
+

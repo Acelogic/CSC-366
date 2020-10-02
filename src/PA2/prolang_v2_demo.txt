@@ -1,0 +1,66 @@
+mcruz@arch-desktop$ swipl     
+Welcome to SWI-Prolog (Version 2.7.16)
+Copyright (c) 1993-1996 University of Amsterdam.
+All rights reserved.
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult(’proglang_v2.pro’).
+
+proglang.pro compiled, 0.00 sec, 1,916 bytes.
+true.
+
+?- language(pascal).
+false.
+
+?- language(prolog).
+true.
+
+?- language(X).
+X = smalltalk
+true.
+
+?- language(L).
+L = smalltalk;
+L = lisp;
+L = prolog;
+false.
+
+?- language(Language),write(Language),nl,fail.
+smalltalk
+lisp
+prolog
+false.
+
+?- essence(lisp,DT,CF).
+DT = list
+CF = ’recursive functions’
+true.
+
+?- essence(prolog,DT,_).
+DT = relation
+true.
+
+
+?- essence(prolog,_,CF).
+CF = ’logical inferencing’
+true.
+
+?- essence(L,objects,_).
+L = smalltalk
+true.
+
+?- history(lisp,I,_).
+I = inventor(’John McCarthy’)
+true.
+
+?- history(lisp,inventor(Name),_).
+Name = ’John McCarthy’
+true.
+
+?- history(_,inventor(N),_),write(N),nl,fail.
+Alan Kay
+John McCarthy
+Alan Colmeraur
+false.
+
+?- halt.

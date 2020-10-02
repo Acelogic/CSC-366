@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Programming Assignment 2 Demo</title>
+    <link href="../demo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <div class="block">
+      <h1>CSC 366 Standard Demo Page</h1>
+      <p>
+	The following text was written to the standard output stream when the <tt>prolang_v2.pro</tt> program was executed from swi-prolog.
+      </p>
+      <div class="block">
+	<h2></h2>
+	<p>
+	  <pre>
+        mcruz@arch-desktop$ swipl     
+        Welcome to SWI-Prolog (Version 2.7.16)
+        Copyright (c) 1993-1996 University of Amsterdam.
+        All rights reserved.
+        For help, use ?- help(Topic). or ?- apropos(Word).
+        
+        ?- consult(’proglang_v2.pro’).
+        
+        proglang.pro compiled, 0.00 sec, 1,916 bytes.
+        true.
+        
+        ?- language(pascal).
+        false.
+        
+        ?- language(prolog).
+        true.
+        
+        ?- language(X).
+        X = smalltalk
+        true.
+        
+        ?- language(L).
+        L = smalltalk;
+        L = lisp;
+        L = prolog;
+        false.
+        
+        ?- language(Language),write(Language),nl,fail.
+        smalltalk
+        lisp
+        prolog
+        false.
+        
+        ?- essence(lisp,DT,CF).
+        DT = list
+        CF = ’recursive functions’
+        true.
+        
+        ?- essence(prolog,DT,_).
+        DT = relation
+        true.
+        
+        
+        ?- essence(prolog,_,CF).
+        CF = ’logical inferencing’
+        true.
+        
+        ?- essence(L,objects,_).
+        L = smalltalk
+        true.
+        
+        ?- history(lisp,I,_).
+        I = inventor(’John McCarthy’)
+        true.
+        
+        ?- history(lisp,inventor(Name),_).
+        Name = ’John McCarthy’
+        true.
+        
+        ?- history(_,inventor(N),_),write(N),nl,fail.
+        Alan Kay
+        John McCarthy
+        Alan Colmeraur
+        false.
+        
+        ?- halt.
+
+	  </pre>
+	</p>
+      </div>
+    </div>
+
+  </div>
+    
+</body>
+</html>
+
+

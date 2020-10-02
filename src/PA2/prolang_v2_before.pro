@@ -1,4 +1,4 @@
-% file: proglang_v1.pro
+% file: proglang_v2.pro
 % line: some knowledge about programming languages
 % language(L) means L is a programming language
 

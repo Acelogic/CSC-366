@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Programming Assignment 2 Demo</title>
+    <link href="../demo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <div class="block">
+      <h1>CSC 366 Standard Demo Page</h1>
+      <p>
+	The following text was written to the standard output stream when the <tt>prolang_v2.pro</tt> program was executed from swi-prolog.
+      </p>
+      <div class="block">
+	<h2></h2>
+	<p>
+	  <pre>
+        mcruz@arch-desktop$ swipl     
+        Welcome to SWI-Prolog (Version 2.7.16)
+        Copyright (c) 1993-1996 University of Amsterdam.
+        All rights reserved.
+        For help, use ?- help(Topic). or ?- apropos(Word).
+        
+        ?- language(snobol).
+        true.
+
+        ?- language(snowball).
+        false.
+
+        ?- essense(snobol,DT,_).
+        DT = pattern.
+
+        ?- essense(L,matrix,_).
+        L = apl.
+
+        ?- language(L).
+        L = smalltalk ;
+        L = lisp ;
+        L = prolog ;
+        L = snobol ;
+        L = apl.
+
+        ?- language(Language),write(Language),nl,fail.
+        smalltalk
+        lisp
+        prolog
+        snobol
+        apl
+        false.
+
+        ?- history(apl,I,_).
+        I = inventor('Kenneth Iverson')
+
+        ?- history(L,list,date(1959)).
+        false.
+
+        ?- history(_,list,date(1959)).
+        false.
+
+        ?- essense(L,list,_),history(_,_,date(1959)).
+        L = lisp.
+        
+        ?- halt.
+
+	  </pre>
+	</p>
+      </div>
+    </div>
+
+  </div>
+    
+</body>
+</html>
+
+
