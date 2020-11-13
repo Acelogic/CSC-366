@@ -1,10 +1,8 @@
-mcruz@arch-desktop$ swipl prolang_v1.pro           
-      Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
-      SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-      Please run ?- license. for legal details.
-      
-      For online help and background, visit http://www.swi-prolog.org
-      For built-in help, use ?- help(Topic). or ?- apropos(Word).
+mcruz@arch-desktop$ swipl     
+Welcome to SWI-Prolog (Version 2.7.16)
+Copyright (c) 1993-1996 University of Amsterdam.
+All rights reserved.
+For help, use ?- help(Topic). or ?- apropos(Word).
       
       ?- module(test).
       Warning: test is not a current module (created)

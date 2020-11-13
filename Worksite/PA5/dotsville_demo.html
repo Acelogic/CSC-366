@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Programming Assignment 3 Demo</title>
+    <link href="../demo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <div class="block">
+      <h1>CSC 366 Standard Demo Page</h1>
+      <p>
+	The following text was written to the standard output stream when the <tt>dotsville.pro</tt> program was executed from swi-prolog.
+      </p>
+      <div class="block">
+	<h2></h2>
+	<p>
+	  <pre>
+      mcruz@arch-desktop$ swipl     
+      Welcome to SWI-Prolog (Version 2.7.16)
+      Copyright (c) 1993-1996 University of Amsterdam.
+      All rights reserved.
+      For help, use ?- help(Topic). or ?- apropos(Word).
+      
+      ?- consult('dotsville.pro').
+      true.
+      
+      ?- demo1.
+      
+      
+      
+      
+      - - - - - -
+      :- dynamic dot/2.
+      
+      dot(cell(0, 1), color(table)).
+      dot(cell(0, 2), color(table)).
+      dot(cell(0, 3), color(table)).
+      dot(cell(0, 4), color(table)).
+      dot(cell(0, 5), color(table)).
+      dot(cell(0, 6), color(table)).
+      
+      true .
+      
+      ?- demo2.
+      
+      
+      
+      R B Y G P O
+      - - - - - -
+      :- dynamic dot/2.
+      
+      dot(cell(0, 1), color(table)).
+      dot(cell(0, 2), color(table)).
+      dot(cell(0, 3), color(table)).
+      dot(cell(0, 4), color(table)).
+      dot(cell(0, 5), color(table)).
+      dot(cell(0, 6), color(table)).
+      dot(cell(1, 1), color(red)).
+      dot(cell(1, 2), color(blue)).
+      dot(cell(1, 3), color(yellow)).
+      dot(cell(1, 4), color(green)).
+      dot(cell(1, 5), color(purple)).
+      dot(cell(1, 6), color(orange)).
+      
+      true .
+      
+      ?- demo3.
+      
+      
+      
+      R B Y G P O
+      - - - - - -
+      :- dynamic dot/2.
+      
+      dot(cell(0, 1), color(table)).
+      dot(cell(0, 2), color(table)).
+      dot(cell(0, 3), color(table)).
+      dot(cell(0, 4), color(table)).
+      dot(cell(0, 5), color(table)).
+      dot(cell(0, 6), color(table)).
+      dot(cell(1, 1), color(red)).
+      dot(cell(1, 2), color(blue)).
+      dot(cell(1, 3), color(yellow)).
+      dot(cell(1, 4), color(green)).
+      dot(cell(1, 5), color(purple)).
+      dot(cell(1, 6), color(orange)).
+      
+      
+      
+      
+      
+      - - - - - -
+      :- dynamic dot/2.
+      
+      dot(cell(0, 1), color(table)).
+      dot(cell(0, 2), color(table)).
+      dot(cell(0, 3), color(table)).
+      dot(cell(0, 4), color(table)).
+      dot(cell(0, 5), color(table)).
+      dot(cell(0, 6), color(table)).
+      
+      true .
+      
+      ?- demo4.
+      ### Cannot add dot: cell is already filled.
+      
+      
+      
+      R B
+      - - - - - -
+      true .
+      
+      ?- demo5.
+      ### Cannot add dot: dots cannot float.
+      ### Cannot add dot: dots cannot float.
+      ### Cannot add dot: dots cannot float.
+      
+      
+      
+      R B       O
+      - - - - - -
+      true .
+      
+      ?- halt.
+
+	  </pre>
+	</p>
+      </div>
+    </div>
+
+  </div>
+    
+</body>
+</html>
+
+

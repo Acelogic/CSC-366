@@ -1,4 +1,4 @@
-% file: proglang_v3.pro
+% file: wildcard.pro
 % line: some knowledge about pokemon 
 
 
