@@ -1,0 +1,71 @@
+mcruz@arch-desktop$ swipl     
+Welcome to SWI-Prolog (Version 2.7.16)
+Copyright (c) 1993-1996 University of Amsterdam.
+All rights reserved.
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('dotspeak_r.pro').
+true.
+
+?- recognizer.
+|: list the dots .
+|: list dots .
+Error ...
+|: list the dots ?
+Error ...
+|: list the blue dots .
+|: list the orange dots .
+|: list the gold dots .
+Error ...0
+|: list the dots in column one .
+|: list the dots on the table .
+|: list the dots off the table .
+|: add a red dot to column one .
+|: add a red dot to column 1 .
+|: fill column one .
+|: fill column eight .
+|: list the dots in column nine .
+Error ...
+|: fill the world .
+|: sprinkle two dots onto the world .
+|: sprinkle 9 dots onto the world .
+|: sprinkle dots onto the world .
+Error ...
+|: sprinkle one dot onto the world .
+Error ...
+|: remove a dot from column one .
+|: remove a red dot from column 1 .
+Error ...
+|: remove a dot from column 2.
+|: clear the world .
+|: clear .
+Error ...
+|: is there an orange dot ?
+|: is there a orange dot ?
+Error ...
+|: is there a blue dot on the table ?
+|: is there a blue dot on the table .
+Error ...
+|: is there a blue dot not on the table ?
+|: is there a dot on the table ?
+|: is there a dot not on the table ?
+|: is there a red dot to the left of a yellow dot ?
+|: is there a purple dot to the right of a green dot ?
+|: is there an orange dot to the right of an orange dot ?
+|: how many dots in column 5 ? 
+|: how many dots in the world ?
+|: how many dots on the table ?
+|: how many dots off the table ?
+|: how many red dots in column one ?
+|: how many red dots in the world ?
+|: how many spaces available in column one ?
+|: how many spaces available in the world ?
+|: how many spaces available ?
+Error ...
+|: is column three full ?
+|: is column one empty ?
+|: is row two full ?
+Error ...
+|: is the world full ?
+|: is the world empty ?
+|: stop .
